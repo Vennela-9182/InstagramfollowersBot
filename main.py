@@ -18,10 +18,10 @@ class InstaFollowers:
         self.driver.get("https://www.instagram.com/?flo=true")
         sleep(3)
         username = self.driver.find_element(By.CSS_SELECTOR, "#loginForm > div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xqui205.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div:nth-child(1) > div > label > input")
-        username.send_keys()
+        username.send_keys(email)
         sleep(1)
         password = self.driver.find_element(By.CSS_SELECTOR, "#loginForm > div.x9f619.xjbqb8w.x78zum5.x168nmei.x13lgxp2.x5pf9jr.xo71vjh.xqui205.x1n2onr6.x1plvlek.xryxfnj.x1c4vz4f.x2lah0s.xdt5ytf.xqjyukv.x1qjc9v5.x1oa3qoh.x1nhvcw1 > div:nth-child(2) > div > label > input")
-        password.send_keys()
+        password.send_keys(password)
         password.send_keys(Keys.ENTER)
         sleep(1)
 
